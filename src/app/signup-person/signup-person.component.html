@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        <h1>Acme Widget Company</h1>        
+        <h3><i>(Activity Sign Up web application)</i></h3>
+        <form #f="ngForm" (ngSubmit)="save(f.value)" >
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input #firstname="ngModel" [(ngModel)]="person.firstname" name="firstname" id="firstname" type="text" class="form-control" required>               
+                 <div class="alert alert-danger" *ngIf="firstname.touched && firstname.invalid">                 
+                    First Name is required.
+                </div>
+            </div>    
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input #lastname="ngModel" [(ngModel)]="person.lastname" name="lastname" id="lastname" type="text" class="form-control" required>               
+                 <div class="alert alert-danger" *ngIf="lastname.touched && lastname.invalid">                 
+                    Last Name is required.
+                </div>                
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input #email="ngModel" [(ngModel)]="person.email" name="email" id="email" type="text" class="form-control" required>               
+                 <div class="alert alert-danger" *ngIf="email.touched && email.invalid">                 
+                    Email is required.
+                </div>        
+            </div>            
+            <div class="form-group">
+                <label for="activity">Activity</label>
+                <input #activity="ngModel" [(ngModel)]="person.activity" name="activity" id="activity" type="text" class="form-control" required>               
+                 <div class="alert alert-danger" *ngIf="activity.touched && activity.invalid">                 
+                    Activity is required.
+                </div>        
+            </div>           
+            <div class="form-group">
+                <label for="comments">Comments</label>
+                <input #comments="ngModel" [(ngModel)]="person.comments" name="comments" id="comments" type="text" class="form-control" required>               
+                 <div class="alert alert-danger" *ngIf="comments.touched && comments.invalid">                 
+                    Comments is required.
+                </div>        
+            </div>           
+            <button class="btn btn-primary" [disabled]="f.invalid" style="margin: 5px;">Save</button>                    
+        </form>   
+    </div>
+    <div class="col-md-6"></div>
+</div>
+
+
+

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "acme-5806a": {
+      "hosting": {
+        "acme-widget": [
+          "acme-5806a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "acme-5806a"
+  }
+}

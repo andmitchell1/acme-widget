@@ -1,1 +1,15 @@
 https://acme-5806a.web.app
+https://github.com/andmitchell1/acme-widget
+https://github.com/andmitchell1/acme-widget.git
+
+
+
+user: andmitchell1
+psw: 281299Stephan
+
+git add .
+git commit -m "initial commit"
+git push origin master
+
+to get from GitHub:
+$ git clone https://github.com/andmitchell1/acme-widget.git

@@ -13,3 +13,6 @@ git push origin master
 
 to get from GitHub:
 $ git clone https://github.com/andmitchell1/acme-widget.git
+
+
+Andrew made a comment for dev branch
